@@ -61,12 +61,10 @@ export const cartSlice = createSlice({
       state.carts = state.carts.filter( item => item.id !== Number(action.payload))
     },
     SingleChk : (state, action)=>{
-      // const newItem = state.checkItems.find(item => item.id === action.payload.id)
-      // state.checkItems = [...state.checkItems, {CntItem : itemNum, ...action.payload}]
+
         state.checkItems.push(action.payload)
         state.cartTotal = state.checkItems.reduce((acc, curr) => acc + curr.calEachitem, 0)
-        console.log('체크아이템' + action.payload.calEachitem)
-        console.log('???' + state.cartTotal)
+   
     },
     removeSingleChk : (state, action)=>{
       
@@ -80,11 +78,9 @@ export const cartSlice = createSlice({
        state.carts = state.carts.map(item => {
          return{
            ...item,
-          //  isChk : !item.isChk
            isChk : !item.isChk
          }
        })
-       console.log('ㅔ묘 혀ㅑㅅㅁㄱ' , state.carts[0].isChk)
       
     }
 

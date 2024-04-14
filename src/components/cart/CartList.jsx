@@ -11,9 +11,6 @@ const CartList = ({item}) => {
    const dispatch = useDispatch()
    const [cartdata, setCartData] = useState(carts)
 
-  //  const [chkItems, setChkItems] = useState([]);
-
- 
   const { isChk } = carts
 
 
@@ -23,33 +20,17 @@ const CartList = ({item}) => {
    const handleAllCheck = (e) => {
      const {name, checked} = e.target
      if(name == 'all'){
-      //  dispatch(AllChk())
+
       setCartData(cartdata.map(item => {
         return{
             ...item,
             isChk : checked
         }
     }))
-    console.log('???' ,cartdata[0].isChk)
+
      }
 
-    //  dispatch(AllChk())
-  /*   if(checked) {
-      // 전체 선택 클릭 시 데이터의 모든 아이템(id)를 담은 배열로 checkItems 상태 업데이트
-      const idArray = [];
-      carts.forEach((el) => idArray.push(el.id));
-      setCheckItems(idArray);
 
-    }
-    else if(!checked){
-      // 전체 선택 해제 시 checkItems 를 빈 배열로 상태 업데이트
-  
-      // setCheckItems([]);
-      // console.log(checkItems)
-    } */
-    
-    // setCartData([...cartdata].map(item => item.isChk = true))
-    // console.log(cartdata[0].isChk)
 
   }
 
@@ -87,19 +68,20 @@ const CartList = ({item}) => {
               <h2>장바구니</h2>
                 <div className="cart-list">
                     <div className="cart-top">
-                      <div>
+                      <div className="first">Item</div>
+              {/* {        <div>
                                   <input type='checkbox' name={`select-${cartdata.id}`}
                       onChange={(e) => handleAllCheck(e.target.checked, cartdata.id)}
                       // 체크된 아이템 배열에 해당 아이템이 있을 경우 선택 활성화, 아닐 시 해제
                       checked={checkItems.includes(cartdata.id) ? true : false}/>
                                   <label htmlFor="all">전체선택</label>
-                              </div>
+                              </div>} */}
                         {/* <label  htmlFor="all">전체선택 </label> */}
                         {/* <input type="checkbox" name="" id="checkedAll" onChange={handleAllCheck} checked={item.ischk}/> */}
                         {/* <input type="checkbox" name='all'id='all'  onChange={handleAllCheck} checked={ cartdata.filter(item => item.isChk !== true ).length< 1} /> */}
                         <ul>
-                            <li>상품정보</li>
-                            <li>수량</li>
+                            <li className="itemName">상품명</li>
+                            <li className="itemNum">수량</li>
                             <li>합계</li>
                         </ul>
                     </div>

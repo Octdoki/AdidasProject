@@ -9,21 +9,17 @@ const CartItem = ({item,  handleSingleCheck, handleAllCheck }) => {
   const {id,image, title, description, price,  isChk, CntItem } = item
   const navigate = useNavigate()
   const dispatch = useDispatch()
- console.log('cartItem t/f : ' , isChk)
+
   const [calEachitem, setCalEachitem] = useState(price)
   const [onCntItem, setOnCntItem] = useState(CntItem)
   const [copyChk, setCopyChk] = useState(false)
-  // const [copyChk, setCopyChk] = useState(isChk)
+
 
   const additem =()=>{
-
     setOnCntItem(onCntItem +1)
-    // console.log('cartEI :' , calEachitem)
     setCalEachitem((onCntItem + 1) * price)
-    console.log('cartEI :' , calEachitem)
-    // dispatch(calEachitem)
   }
-  console.log('1' ,copyChk)
+
   const onIncrease =(e)=>{
     
     // console.log(item.isChk)
@@ -33,11 +29,9 @@ const CartItem = ({item,  handleSingleCheck, handleAllCheck }) => {
      //  dispatch(AllChk())
       setCopyChk(!copyChk)
       if(!copyChk){
-        console.log('머리뽀갈날거같아' ,copyChk)
         dispatch(SingleChk({...item,calEachitem}))
     
       }else{
-        console.log('false?' + copyChk)
         dispatch(removeSingleChk(id))
       }
       

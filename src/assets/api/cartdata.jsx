@@ -32,7 +32,7 @@ export const products = [
       title: "GAZELLE ",
       price: 129000,
       description:
-        "수십 년이 지난 후에도 사랑받고 있는 시그니처 T-토 오버레이와 톱니 형태의 3-스트라이프",
+        "시그니처 T-토 오버레이와 톱니 형태의 3-스트라이프",
       category: "신발",
       image: "./adidasImg/adidas3.jpeg",
       rating: {

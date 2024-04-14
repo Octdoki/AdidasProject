@@ -48,6 +48,8 @@ export const CustomerDetailWrap = styled.div`
        .txt {
         font-size:18px; margin-bottom: 15px;
         height:300px; white-space: pre-line; 
+        width: 1200px;
+        word-break: break-word;
        }
        .date { font-size: 16px }
     }

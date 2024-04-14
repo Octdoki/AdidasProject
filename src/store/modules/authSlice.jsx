@@ -5,7 +5,10 @@ const initialState = {
   user : null,
   authed : false,// 로그인 여부 
   dataList :  localStorage.getItem('dataList') ? JSON.parse(localStorage.getItem('dataList')) : [
-    {id : 1, userid : 'admin', password : '' },
+    {       username: "관리자",
+    email: "abc@naver.com",
+    tel: "010-0000-0000",
+    password: "a1234" },
   ]
 }
 let no = 1
@@ -21,11 +24,13 @@ export const authSlice = createSlice({
             state.user = newitem
             state.authed = true
           }else{
-            alert('비밀번호 확인')
+            alert('비밀번호를 확인해주세요')
+            navigate(`/login`)
             
           }
         }else{
-          alert('아이디 확인')
+          alert('아이디를 확인해주세요')
+          navigate(`/login`)
         }
     },
     logout : (state, action)=>{

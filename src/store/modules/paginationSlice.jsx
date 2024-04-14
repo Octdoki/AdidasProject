@@ -36,7 +36,6 @@ export const paginationSlice = createSlice({
     
     },
     totalData : (state,action) => {
-        //emfdjdhsms epdlxj ekfma
         state.currPage= 1
         state.totalPage = Math.ceil(state.pageData.length / state.postsPerpage)
     },

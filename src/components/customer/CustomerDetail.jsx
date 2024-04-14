@@ -30,7 +30,7 @@ const CustomerDetail = () => {
             <div className="inner">
             <h2> 문의 글 </h2>
             <div className="con">
-            <h3> 번  {title} </h3>
+            <h3> {title} </h3>
                            
                 <p className="name">{name}</p>                
                 <p className="txt"> {content}  </p>

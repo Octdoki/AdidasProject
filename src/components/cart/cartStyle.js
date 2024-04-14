@@ -12,19 +12,31 @@ h2 {   }
     }
     h2 { font-size:40px; font-weight:700;margin-bottom:50px }
     .cart-list {  width: 100%;
-        .cart-top {    display: flex;
-            justify-content: space-between;
+        .cart-top {   
+            display: flex;
             border-top: 1px solid #333;
             padding: 15px 0;
             border-bottom: 1px solid #333;
-            ul { display: flex; justify-content: space-between; width: 60%;
-                li { width: 33.33%; }
+            justify-content: space-between;
+            .first{
+                width: 100px;
+                
+            }
+            ul { display: flex; justify-content: space-between; width: 65%;
+                li { width: 30%; 
+            
+                }
+                .itemName{
+                    width:50px;
+                    margin-right: 300px;
+                 
+                }
             }
         }
         article { display: flex; border-bottom: 1px solid #000; align-items: center; justify-content: space-between; margin-bottom: 15px; padding: 10px; font-size: 20px; width: 100%;
             img { width: 95px; }
             div { display: flex; width: 60%; justify-content: space-between;
-                h3 { font-size: 20px; margin-left: 100px  }
+                h3 { font-size: 20px; margin-left:150px; width: 170px  }
             }
             button { width: 150px; border: 1px solid #000; height: 50px; transition: 0.3s; margin-right: 0;
                 &:hover {background: #000; color:#fff} 
