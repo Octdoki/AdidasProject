@@ -1,4 +1,4 @@
-# AdidasMall Project README (English / Japanese)
+# AdidasMall Project (English / Japanese)
 
 ## 👟 AdidasMall
 
