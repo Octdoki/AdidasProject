@@ -1,149 +1,166 @@
-  ![screencapture-localhost-5173-202](https://github.com/Octdoki/Adidas/assets/76845650/75c45a99-a534-4c91-ac1c-41e326840b1b)
+# AdidasMall Project README (English / Japanese)
 
- ## AdidasMall
+## 👟 AdidasMall
 
-  아디다스 상품을 판매하는 쇼핑몰입니다
+| English (ENG) | Japanese (JP) | 
+| :--- | :--- | 
+| This is a shopping mall selling Adidas products. | Adidas製品を販売するショッピングモールです。 | 
 
-   demo Link : https://octdoki.github.io/Adidas/dist/
-   
+Demo Link: <https://octdoki.github.io/Adidas/dist/>
 
-   ## Description
+---
 
-  ### 디렉터리 구조
-          📦src
-          ┣ 📂assets
-          ┣ 📂hooks
-          ┃ ┣ 📜useAxios.jsx
-          ┃ ┣ 📜useInput.jsx
-          ┃ ┗ 📜설명.txt
-          ┣ 📂pages
-          ┃ ┣ 📂about
-          ┃ ┃ ┣ 📜About.jsx
-          ┃ ┃ ┗ 📜AboutStyle.js
-          ┃ ┣ 📂cart
-          ┃ ┃ ┣ 📜Cart.css
-          ┃ ┃ ┣ 📜Cart.jsx
-          ┃ ┃ ┗ 📜ProjectStyle.js
-          ┃ ┣ 📂customer
-          ┃ ┃ ┣ 📜Customer.jsx
-          ┃ ┃ ┗ 📜CustomerStyle.js
-          ┃ ┣ 📂login
-          ┃ ┃ ┣ 📜Join.jsx
-          ┃ ┃ ┣ 📜Login.jsx
-          ┃ ┃ ┣ 📜LoginStyle.js
-          ┃ ┃ ┗ 📜Logout.jsx
-          ┃ ┣ 📂main
-          ┃ ┃ ┣ 📜Main.jsx
-          ┃ ┃ ┗ 📜MainStyle.js
-          ┃ ┣ 📂notfile
-          ┃ ┃ ┣ 📜NotfileStyle.js
-          ┃ ┃ ┗ 📜Notfiles.jsx
-          ┃ ┣ 📂notice
-          ┃ ┃ ┣ 📜Notice.jsx
-          ┃ ┃ ┗ 📜NoticeStyle.js
-          ┃ ┗ 📂product
-          ┃ ┃ ┣ 📜Product.jsx
-          ┃ ┃ ┣ 📜ProductSearch.jsx
-          ┃ ┃ ┗ 📜ProjectStyle.js
-          ┣ 📂store
-          ┃ ┣ 📂modules
-          ┃ ┃ ┣ 📜authSlice.jsx
-          ┃ ┃ ┣ 📜cartSlice.jsx
-          ┃ ┃ ┣ 📜customerSlice.jsx
-          ┃ ┃ ┣ 📜noticeSlice.jsx
-          ┃ ┃ ┗ 📜paginationSlice.jsx
-          ┃ ┗ 📜index.jsx
-          ┣ 📂styled
-          ┃ ┣ 📜GlobalStyle.js
-          ┃ ┣ 📜Style.js
-          ┃ ┗ 📜swiperStyle.js
-          ┣ 📜.DS_Store
-          ┣ 📜App.jsx
-          ┣ 📜index.css
-          ┗ 📜main.jsx
+## ✨ Project Goal / プロジェクト目的
 
+| English (ENG) | Japanese (JP) | 
+| :--- | :--- | 
+| **Project Goal:** To acquire modern front-end development skills and implement an enterprise-level state management system (Redux Toolkit) by building a fully functional e-commerce mall. This project served as a foundation for mastering component-based architecture and advanced state control. | **プロジェクト目的:** 最新のフロントエンド開発スキルを習得し、完全な機能を持つECモールを構築することで、企業レベルのステート管理システム（Redux Toolkit）の実装能力を確立すること。コンポーネントベースのアーキテクチャと高度な状態制御の習得を目的としました。 | 
 
+---
 
+## 💻 Description / 概要
 
- 
- 
-          
-
-   
-      
-  #### Enviorment
-  * 1.Git
-  * 2.NodeJS / Yarn
-
-  #### Technologies
-  * react
-  * react-dom
-  * react-router-dom
-  * redux-toolkit
-
-  ## 주요기능
+### Directory Structure / ディレクトリ構造
+                  
+                    📦src
+                    ┣ 📂assets
+                    ┣ 📂hooks
+                    ┃ ┣ 📜useAxios.jsx
+                    ┃ ┣ 📜useInput.jsx
+                    ┃ ┗ 📜설명.txt
+                    ┣ 📂pages
+                    ┃ ┣ 📂about
+                    ┃ ┃ ┣ 📜About.jsx
+                    ┃ ┃ ┗ 📜AboutStyle.js
+                    ┃ ┣ 📂cart
+                    ┃ ┃ ┣ 📜Cart.css
+                    ┃ ┃ ┣ 📜Cart.jsx
+                    ┃ ┃ ┗ 📜ProjectStyle.js
+                    ┃ ┣ 📂customer
+                    ┃ ┃ ┣ 📜Customer.jsx
+                    ┃ ┃ ┗ 📜CustomerStyle.js
+                    ┃ ┣ 📂login
+                    ┃ ┃ ┣ 📜Join.jsx
+                    ┃ ┃ ┣ 📜Login.jsx
+                    ┃ ┃ ┣ 📜LoginStyle.js
+                    ┃ ┃ ┗ 📜Logout.jsx
+                    ┃ ┣ 📂main
+                    ┃ ┃ ┣ 📜Main.jsx
+                    ┃ ┃ ┗ 📜MainStyle.js
+                    ┃ ┣ 📂notfile
+                    ┃ ┃ ┣ 📜NotfileStyle.js
+                    ┃ ┃ ┗ 📜Notfiles.jsx
+                    ┃ ┣ 📂notice
+                    ┃ ┃ ┣ 📜Notice.jsx
+                    ┃ ┃ ┗ 📜NoticeStyle.js
+                    ┃ ┗ 📂product
+                    ┃ ┃ ┣ 📜Product.jsx
+                    ┃ ┃ ┣ 📜ProductSearch.jsx
+                    ┃ ┃ ┗ 📜ProjectStyle.js
+                    ┣ 📂store
+                    ┃ ┣ 📂modules
+                    ┃ ┃ ┣ 📜authSlice.jsx
+                    ┃ ┃ ┣ 📜cartSlice.jsx
+                    ┃ ┃ ┣ 📜customerSlice.jsx
+                    ┃ ┃ ┣ 📜noticeSlice.jsx
+                    ┃ ┃ ┗ 📜paginationSlice.jsx
+                    ┃ ┗ 📜index.jsx
+                    ┣ 📂styled
+                    ┃ ┣ 📜GlobalStyle.js
+                    ┃ ┣ 📜Style.js  
+                    ┃ ┗ 📜swiperStyle.js
+                    ┣ 📜.DS_Store
+                    ┣ 📜App.jsx
+                    ┣ 📜index.css
+                    ┗ 📜main.jsx
 
 
- ### 1) 메인
+  #### Enviorment / 環境
 
-* swiper slide 배너 
-* 리뉴얼 컨텐츠
-  
+* 1. Git
+
+* 2. NodeJS / Yarn
+
+#### Technologies / 使用技術
+
+* react
+
+* react-dom
+
+* react-router-dom
+
+* redux-toolkit
+
+---
+
+## 🛠️ Key Features / 主要機能
+
+### 1) Main / メイン
+
+| English (ENG) | Japanese (JP) | 
+| :--- | :--- | 
+| Swiper slide banner | Swiperスライドバナー | 
+| Refreshed Content | リニューアルコンテンツ | 
+
 <img src="./images/../public/images/main.gif">
 
-### 2) 브랜드소개
+### 2) Brand Introduction / ブランド紹介
 
-* 리뉴얼 컨텐츠
-  
+| English (ENG) | Japanese (JP) | 
+| :--- | :--- | 
+| Refreshed Content | リニューアルコンテンツ | 
 
-### 3) 상품 리스트
+### 3) Product List / 商品リスト
 
-* 상품 정렬
-* 상품 정렬 초기화
-* 상품 리스트 검색 기능 
-* 주문하기 클릭 시 장바구니 담기
-  
+| English (ENG) | Japanese (JP) | 
+| :--- | :--- | 
+| Product Sorting | 商品の並べ替え機能 | 
+| Reset Product Sorting | 商品ソートの初期化 | 
+| Product List Search Function | 商品リストの検索機能 | 
+| Add to Cart upon Clicking 'Order' | 「注文する」クリックでカートに追加 | 
+
 <img src="./images/../public/images/product.gif">
 
+### 4) Cart / カート
 
-### 4) 장바구니
+| English (ENG) | Japanese (JP) | 
+| :--- | :--- | 
+| Calculate Price based on Quantity Increase/Decrease | 商品の数量増減と、それに応じた価格計算 | 
+| Deselecting 'Select All' when individual checkboxes are clicked (Planned) | 個別チェック時、全体チェックを解除 (予定) | 
+| Update quantity and total upon checkbox click (Planned) | チェックボックスクリックで数量・合計を更新 (予定) | 
+| Delete Selected Items | 選択商品の削除 | 
+| Clear the Entire Shopping Cart | カートの全クリア | 
+| Navigate to Product List upon Clicking 'Go Shopping' | 「買い物へ行く」ボタンクリックで商品リストへ移動 | 
 
-* 상품 증감 수량과 수량에 따른 각각의 가격 계산
-* 체크박스 각각 클릭 시 전체 체크박스는 해제 (예정)
-* 체크박스 클릭 시 수량, 총합 (예정)
-* 선택상품 삭제
-* 장바구니 전체 비우기
-* 쇼핑하러가기 버튼 클릭 시 상품리스트로 이동
-  
 <img src="./images/../public/images/cart.gif">
 
+### 5) Notice Board / お知らせ掲示板
 
-### 5) Notice 게시판
+| English (ENG) | Japanese (JP) | 
+| :--- | :--- | 
+| Pagination | ページネーション | 
+| View Post Details and Navigate Back to the List | 投稿詳細の確認、リストへの戻り機能 | 
 
-* 페이지네이션
-* 게시물 상세내용 확인가능, 다시 목록으로 이동
-  
 <img src="./images/../public/images/notice.gif">
 
+### 6) Customer Board / お問い合わせ掲示板
 
-### 6) Customer 게시판 
-
-* 글 작성 기능
-* 글 수정 기능
-* 글 삭제기능
-* 페이지네이션
-* 목록가기
-* 글 작성 취소
+| English (ENG) | Japanese (JP) | 
+| :--- | :--- | 
+| Write Post Function | 投稿作成機能 | 
+| Edit Post Function | 投稿修正機能 | 
+| Delete Post Function | 投稿削除機能 | 
+| Pagination | ページネーション | 
+| Go to List | リストへ移動 | 
+| Cancel Post Writing | 投稿作成キャンセル | 
 
 <img src="./images/../public/images/customer.gif">
 
+### 7) Registration / Login / Logout (会員登録 / ログイン / ログアウト)
 
-### 7) 회원가입 /  로그인 / 로그아웃
-
-* 회원가입 시 로그인 가능
-* 로컬스토리지 연동(예정)
+| English (ENG) | Japanese (JP) | 
+| :--- | :--- | 
+| Login Enabled upon Successful Registration | 会員登録後のログイン機能 | 
+| Local Storage Integration (Planned) | ローカルストレージ連携 (予定) | 
 
 <img src="./images/../public/images/login.gif">
-
-
-
